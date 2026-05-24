@@ -1,0 +1,204 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: white;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+  background-color: #111;
+  border-bottom: 1px solid gray;
+  padding: 20px 40px;
+  position: fixed;
+  width: 90%;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: lightgreen;
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: lightgreen;
+}
+
+/* HERO */
+
+.hero {
+  padding: 180px 40px 120px;
+}
+
+.hello {
+  color: lightgreen;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: lightgreen;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 20px 10px;
+}
+
+h2 {
+  color: lightgreen;
+  margin-bottom: 40px;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.about-text p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* PROJECTS*/
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+figure img {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 20px;
+}
+/* CONTACT */
+
+.contact-text {
+  color: gray;
+}
+
+form {
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: #111;
+  border: 1px solid gray;
+  color: white;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* CARDS*/
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.card {
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid gray;
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: lightgreen;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
